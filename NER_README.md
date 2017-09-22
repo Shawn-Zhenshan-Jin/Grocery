@@ -40,9 +40,9 @@
 #### eval_split() output
 ![data description](https://github.com/Shawn-Zhenshan-Jin/Grocery/blob/master/Data%20Description.png) 
 #### batch_training() output
-![loss line](https://github.com/Shawn-Zhenshan-Jin/Grocery/blob/master/loss_line.png)     
+![loss line](https://github.com/Shawn-Zhenshan-Jin/Grocery/blob/master/loss_line_new.png)     
 #### eval_score() output
 ![evaluation metrics description](https://github.com/Shawn-Zhenshan-Jin/Grocery/blob/master/score_output.png) 
 #### train_curve() output
-![train_curve](https://github.com/Shawn-Zhenshan-Jin/Grocery/blob/master/train_curve.png)     
+![train_curve](https://github.com/Shawn-Zhenshan-Jin/Grocery/blob/master/train_curve_new.png)     
 
