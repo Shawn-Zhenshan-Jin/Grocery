@@ -1,4 +1,4 @@
-  # Folder Structure
+  # NER Folder Structure
     .
     ├── pipeline                # the whole spacy training pipeline
     │   ├── generating_tagging_entity.py    # generate unchecked entities for pre-tagging
