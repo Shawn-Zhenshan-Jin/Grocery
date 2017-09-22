@@ -37,12 +37,12 @@
     │   └--> train_curve()          # Evaluate the requirement for more tagged data
     │                                 output: evaluation metrics with different proportion of training data
  
-#### eval_split() output
+#### eval_split() output example
 ![data description](https://github.com/Shawn-Zhenshan-Jin/Grocery/blob/master/Data%20Description.png) 
-#### batch_training() output
+#### batch_training() output example
 ![loss line](https://github.com/Shawn-Zhenshan-Jin/Grocery/blob/master/loss_line_new.png)     
-#### eval_score() output
+#### eval_score() output example
 ![evaluation metrics description](https://github.com/Shawn-Zhenshan-Jin/Grocery/blob/master/score_output.png) 
-#### train_curve() output
+#### train_curve() output example
 ![train_curve](https://github.com/Shawn-Zhenshan-Jin/Grocery/blob/master/train_curve_new.png)     
 
