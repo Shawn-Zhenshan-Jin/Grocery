@@ -3,16 +3,37 @@
     ├── pipeline                # the whole spacy training pipeline
     │   ├── generating_tagging_entity.py    # generate unchecked entities for pre-tagging
     │   ├── pre-tagging.py                  # pre-tagging entities
-    │   ├── ner.py                          # train NER model
+    │   ├── ner.py                          # NER model training
     │   └── utils.py                        # all the utility funcitons
     ├── model                   # NER models 
     │   ├── gold                            # production ready
     │   └── tmp                             # temprorily i.e. test model generated during the training process
-    ├── data                   
-    │   ├── training_data                   # pre-tagged data
+    ├── data                    # Input & output along the pipeline
     │   ├── unchecked_data                  # Waiting to be tagged
+    │   ├── tagged_data                     # pre-tagged data
+    │   ├── training_data                   # training data
     │   └── tmp                             # temprorily i.e. training, validation data splitted from total training data
     ├── log                     # logging file from pipeline
     └── NER_README.md
-    
-    ## ner.py
+
+
+# Training processor description:
+## script: pipeline/ner.py
+### functions:
+    .
+    ├── ner.py               
+    │   ├--> raw_data_cleaning()    # process the tagged data under data/training_data and put them into data/training_data
+    │   ├--> pseudo_rehearsal()     # generate entities from orginial model and mixed them with tagged data
+    │   ├--> eval_split()           # split the training data into training & validation & evaluation
+    │                                 output: data description
+    │                                 
+    │   ├--> batch_training()       # train NER model
+    │                                 output: loss line                         
+    │   ├--> eval_score()           # evaluate NER model performance with evaluation data
+    │                                 output: evaluation metrics description, including precision, recall and f-measurement
+    │                                 
+    │   ├--> validation()           # search the best tunning parameters with validation data, e.g. dropout rate
+    │   └--> train_curve()          # Evaluate the requirement for more tagged data
+    │                                 output: evaluation metrics with different proportion of training data
+        
+        
