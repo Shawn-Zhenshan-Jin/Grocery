@@ -25,15 +25,24 @@
     │   ├--> raw_data_cleaning()    # process the tagged data under data/training_data and put them into data/training_data
     │   ├--> pseudo_rehearsal()     # generate entities from orginial model and mixed them with tagged data
     │   ├--> eval_split()           # split the training data into training & validation & evaluation
-    │                                 output: data description
-    │                                 
+    │                                 output: data description [Example]
+    │                                                  
     │   ├--> batch_training()       # train NER model
-    │                                 output: loss line                         
+    │                                 output: loss line       
+    │
     │   ├--> eval_score()           # evaluate NER model performance with evaluation data
     │                                 output: evaluation metrics description, including precision, recall and f-measurement
     │                                 
     │   ├--> validation()           # search the best tunning parameters with validation data, e.g. dropout rate
     │   └--> train_curve()          # Evaluate the requirement for more tagged data
     │                                 output: evaluation metrics with different proportion of training data
-        
-        
+ 
+#### eval_split() output
+![data description](https://github.com/Shawn-Zhenshan-Jin/Grocery/blob/master/Data%20Description.png) 
+#### batch_training() output
+![loss line](https://github.com/Shawn-Zhenshan-Jin/Grocery/blob/master/loss_line.png)     
+#### eval_score() output
+![evaluation metrics description](https://github.com/Shawn-Zhenshan-Jin/Grocery/blob/master/score_output.png) 
+#### train_curve() output
+![train_curve](https://github.com/Shawn-Zhenshan-Jin/Grocery/blob/master/train_curve.png)     
+
